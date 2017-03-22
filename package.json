@@ -1,6 +1,6 @@
 {
   "name": "scoped-regex",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Regular expression for matching scoped npm package names",
   "license": "MIT",
   "repository": "sindresorhus/scoped-regex",
