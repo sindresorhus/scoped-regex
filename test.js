@@ -1,5 +1,5 @@
 import test from 'ava';
-import m from '.';
+import scopedRegex from '.';
 
 const matches = [
 	'@sindresorhus/df',
@@ -19,16 +19,16 @@ const nonMatches = [
 	'@foo89/_bar'
 ];
 
-test(t => {
-	for (const x of matches) {
-		t.true(m({exact: true}).test(x));
+test('scopedRegex', t => {
+	for (const match of matches) {
+		t.true(scopedRegex({exact: true}).test(match));
 	}
 
-	for (const x of nonMatches) {
-		t.false(m({exact: true}).test(x));
+	for (const nonMatch of nonMatches) {
+		t.false(scopedRegex({exact: true}).test(nonMatch));
 	}
 
-	for (const x of matches) {
-		t.is((m().exec(`foo ${x} bar`) || [])[0], x);
+	for (const match of matches) {
+		t.is((scopedRegex().exec(`foo ${match} bar`) || [])[0], match);
 	}
 });
