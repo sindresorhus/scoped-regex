@@ -1,6 +1,8 @@
 export interface Options {
 	/**
-	 * Only match an exact string. Useful with `RegExp#test()` to check if a string is a scoped package name. Default: `false` *(Matches any scoped package names in a string)*.
+	 * Only match an exact string. By default, it matches any scoped package names in a string. Useful with `RegExp#test()` to check if a string is a scoped package name.
+	 *
+	 * @default false
 	 */
 	readonly exact?: boolean;
 }
