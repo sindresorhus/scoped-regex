@@ -1,6 +1,6 @@
 'use strict';
 
-const regex = '@[a-z0-9][\\w-.]+/[a-z0-9][\\w-.]*';
+const regex = '@[a-z\\d][\\w-.]+/[a-z\\d][\\w-.]*';
 
 const scopedRegex = options =>
 	options && options.exact ?

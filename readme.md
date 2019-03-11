@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save scoped-regex
+$ npm install scoped-regex
 ```
 
 
@@ -29,7 +29,11 @@ scopedRegex({exact: true}).test('@sindresorhus/df');
 
 Returns a `RegExp` for matching scoped package names.
 
-#### options.exact
+#### options
+
+Type: `Object`
+
+##### exact
 
 Type: `boolean`<br>
 Default: `false` *(Matches any scoped package names in a string)*
