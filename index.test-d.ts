@@ -1,5 +1,5 @@
-import {expectType} from 'tsd-check';
-import scopedRegex from '.';
+import {expectType} from 'tsd';
+import scopedRegex = require('.');
 
 expectType<RegExp>(scopedRegex());
 expectType<RegExp>(scopedRegex({exact: true}));
