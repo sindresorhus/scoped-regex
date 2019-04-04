@@ -8,4 +8,5 @@ const scopedRegex = options =>
 		new RegExp(regex, 'gi');
 
 module.exports = scopedRegex;
+// TODO: Remove this for the next major release
 module.exports.default = scopedRegex;
