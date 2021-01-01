@@ -1,4 +1,4 @@
-# scoped-regex [![Build Status](https://travis-ci.org/sindresorhus/scoped-regex.svg?branch=master)](https://travis-ci.org/sindresorhus/scoped-regex)
+# scoped-regex
 
 > Regular expression for matching [scoped npm package names](https://docs.npmjs.com/misc/scope)
 
