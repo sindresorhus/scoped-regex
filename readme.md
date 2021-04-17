@@ -2,18 +2,16 @@
 
 > Regular expression for matching [scoped npm package names](https://docs.npmjs.com/misc/scope)
 
-
 ## Install
 
 ```
 $ npm install scoped-regex
 ```
 
-
 ## Usage
 
 ```js
-const scopedRegex = require('scoped-regex');
+import scopedRegex from 'scoped-regex';
 
 scopedRegex({exact: true}).test('@sindresorhus/df');
 //=> true
@@ -22,30 +20,23 @@ scopedRegex({exact: true}).test('@sindresorhus/df');
 //=> ['@sindresorhus/df']
 ```
 
-
 ## API
 
-### scopedRegex([options])
+### scopedRegex(options?)
 
 Returns a `RegExp` for matching scoped package names.
 
 #### options
 
-Type: `Object`
+Type: `object`
 
 ##### exact
 
-Type: `boolean`<br>
+Type: `boolean`\
 Default: `false` *(Matches any scoped package names in a string)*
 
 Only match an exact string. Useful with `RegExp#test()` to check if a string is a scoped package name.
 
-
 ## Related
 
 - [is-scoped](https://github.com/sindresorhus/is-scoped) - Check if a string is a scoped npm package name
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)

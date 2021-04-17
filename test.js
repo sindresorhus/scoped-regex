@@ -1,5 +1,5 @@
 import test from 'ava';
-import scopedRegex from '.';
+import scopedRegex from './index.js';
 
 const matches = [
 	'@sindresorhus/df',
